@@ -48,7 +48,7 @@ int main() {
     Array<std::string> sorted_arr = Sort<std::string>::bubble(Array<std::string>(str_arr, size));
     */
 
-    /* Strings */
+    /* Chars */
     char char_arr[7] = {'c', 'd', 'a', 'f', 'b', 'g', 'e'};
     int size = sizeof(char_arr) / sizeof(char_arr[0]);
     Array<char> sorted_arr = Sort<char>::bubble(Array<char>(char_arr, size));
@@ -104,8 +104,6 @@ T & Array<T>::operator [] (size_t index) {
     throw index;
   return T_arr[index];
 }
-
-// Sort functions
 
 template <typename T>
 Array<T> Sort<T>::bubble(Array<T> to_sort) {
